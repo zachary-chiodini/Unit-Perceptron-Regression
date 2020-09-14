@@ -43,3 +43,7 @@
 <p align="center">
     <img src="photos/equation11.png">
 </p>
+
+<p align="center">
+    <img src="photos/equation12.png">
+</p>
