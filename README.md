@@ -51,3 +51,7 @@
 <p align="center">
     <img src="photos/equation13.png">
 </p>
+
+<p align="center">
+    <img src="photos/equation14.png">
+</p>
