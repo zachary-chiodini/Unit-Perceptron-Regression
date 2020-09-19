@@ -59,3 +59,23 @@
 <p align="center">
     <img src="photos/equation15.png">
 </p>
+
+<p align="center">
+    <img src="photos/equation16.png">
+</p>
+
+<p align="center">
+    <img src="photos/equation17.png">
+</p>
+
+<p align="center">
+    <img src="photos/equation18.png">
+</p>
+
+<p align="center">
+    <img src="photos/equation19.png">
+</p>
+
+<p align="center">
+    <img src="photos/equation20.png">
+</p>
