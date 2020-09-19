@@ -84,7 +84,6 @@ class Network :
         '''
         Prints Model and Statistics to Screen
         '''
-        print( self.__netvars**0.5 )
         model = 'f('
         for i in range( 1, len( self.__network ) + 1 ) :
             model += ' x{},'.format( i )
@@ -94,17 +93,16 @@ class Network :
             round( self.__bias, dgt ),
             round( self.__netvars[ 0 ]**0.5, dgt )
             )
-        i = 1
-        for slope, error in zip( self.__network, self.__netvars[ 1 : ] ) :
-            error = error**0.5
+        for i in range( len( self.__network ) ) :
+            slope = self.__network[ i ]
+            error = self.__netvars[ i + 1 ]**0.5
             dgt = self.__firstSigFig( error )
             model += ' {} {}({})x{}'.format(
                 '-' if slope[ 0 ] < 0 else '+',
                 abs( round( slope[ 0 ], dgt ) ),
                 round( error, dgt ),
-                i
+                i + 1
                 )
-            i += 1
         print()
         print( '+-------+--' + '-'*len( model ) + '+' )
         print( '| Model | {} |'.format( model ) )
