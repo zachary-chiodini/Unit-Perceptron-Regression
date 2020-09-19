@@ -107,14 +107,36 @@ class Network :
         print( '+-------+--' + '-'*len( model ) + '+' )
         print( '| Model | {} |'.format( model ) )
         print( '+-------+--' + '-'*len( model ) + '+' )
-        print( '|  MSE  | {}'.format( round( self.__mse, 2 ) ) +\
+        print( '|   b   | {}'.format( self.__bias ) +\
                ' '*( len( model ) -\
-                     len( str( round( self.__mse, 2 ) ) ) ) +\
+                     len( str( self.__bias ) ) ) +\
+               ' |' )
+        for i in range( len( self.__network ) ) :
+            print( '+-------+--' + '-'*len( model ) + '+' )
+            print( '|  w{}   | {}'.format( i + 1, self.__network[ i ][ 0 ] ) +\
+                   ' '*( len( model ) -\
+                         len( str( self.__network[ i ][ 0 ] ) ) ) +\
+                   ' |' )
+        print( '+-------+--' + '-'*len( model ) + '+' )
+        print( '| STDb  | {}'.format( self.__netvars[ 0 ]**0.5 ) +\
+               ' '*( len( model ) -\
+                     len( str( self.__netvars[ 0 ]**0.5 ) ) ) +\
+               ' |' )
+        for i in range( 1, len( self.__netvars ) ) :
+            print( '+-------+--' + '-'*len( model ) + '+' )
+            print( '| STDw{} | {}'.format( i, self.__netvars[ i ]**0.5 ) +\
+               ' '*( len( model ) -\
+                     len( str( self.__netvars[ i ]**0.5 ) ) ) +\
                ' |' )
         print( '+-------+--' + '-'*len( model ) + '+' )
-        print( '|  R^2  | {}'.format( round( self.__rsquare, 2 ) ) +\
+        print( '|  MSE  | {}'.format( self.__mse ) +\
                ' '*( len( model ) -\
-                     len( str( round( self.__rsquare, 2 ) ) ) ) +\
+                     len( str( self.__mse ) ) ) +\
+               ' |' )
+        print( '+-------+--' + '-'*len( model ) + '+' )
+        print( '|  R^2  | {}'.format( self.__rsquare ) +\
+               ' '*( len( model ) -\
+                     len( str( self.__rsquare ) ) ) +\
                ' |' )
         print( '+-------+--' + '-'*len( model ) + '+' )
         print()
