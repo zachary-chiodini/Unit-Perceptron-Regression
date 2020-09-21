@@ -211,7 +211,7 @@ from perceptron import Network
     CO, HCN, H<sub>2</sub>S, HCL, HBR, NO<sub>2</sub> and SO<sub>2</sub> gas. 
     Time is measured in minutes and the concentration of gases are measured in parts per thousand.
     The perceptron will be used to build a linear model that will predict the approximate length of time it will take to incapacitate an animal
-    when exposed to a known concentration of CO and NO<sub>2</sub>.
+    when exposed to known concentrations of CO and NO<sub>2</sub>.
 </p>
 
 ```python
