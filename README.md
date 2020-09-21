@@ -41,7 +41,7 @@
 <p align="center">
     <img src="photos/equation3.png" width=75%>
 </p>
-
+<hr>
 <h1>Regression Analysis</h1>
 
 <p align="jutify">
@@ -122,7 +122,6 @@
     <img src="photos/equation10.png" width=75%>
 </p>
 <hr>
-    
 <h1>Gradient Descent Training Algorithm</h1>
 
 <p align="jutify">
@@ -160,7 +159,7 @@
 <p align="center">
     <img src="photos/equation13.png" width=75%>
 </p>
-
+<hr>
 <h1>Model Statistics</h1>
 
 <p align="jutify">
@@ -196,7 +195,7 @@
 <p align="center">
     <img src="photos/equation17.png" width=75%>
 </p>
-
+<hr>
 <h1>Try It</h1>
 
 <p align="jutify">
