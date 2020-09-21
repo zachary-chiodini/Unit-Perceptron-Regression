@@ -106,7 +106,7 @@
 </p>
 <hr>
 <p align="justify">
-    It is easy to see how the decomposed equations (7) and (8) can be packed back into their respective matrix counterparts for all values of <i>k</i>,
+    It is easy to see how the decomposed equations (7) and (8) can be packed back into their respective matrix equations for all values of <i>k</i>,
     as shown in (9) and (10).
 </p>
 <hr>
