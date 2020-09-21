@@ -19,7 +19,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation1.png">
+    <img src="photos/equation1.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
