@@ -34,7 +34,7 @@
 <p align="jutify">
     The mathematical model for the perceptron <i><b>P</b></i> is simply the product of <i><b>X</b></i> and <b>Ω</b> (3), 
     where the first column in <i><b>X</b></i> and the first element in <b>Ω</b> give the bias <i>b</i>.
-    Geometrically speaking, the perceptron generates a hyperplane having <i>n</n> slopes in <i>n</n> dimensions,
+    Geometrically speaking, the perceptron generates a hyperplane having <i>n</n> slopes in <i>n</i> dimensions,
     where <i>b</i> is the vertical intercept. This hyperplane can be used to model data that is linearly associated.
 </p>
 <hr>
