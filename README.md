@@ -15,9 +15,12 @@
 <p align="jutify">
     The perceptron unit will accept two inputs. One is a matrix <i><b>X</b></i> (1), 
     where <i>m</i> is the number of data points that will be used to train or test the model 
-    and <i>n</i> is the number of independent variables, or features, that will be used by the model. 
+    and <i>n</i> is the number of independent variables, or features, that will be used by the model.
+    Every element in the first column <i>x<sub>i,0</sub></i> = 1.
     The other is a column vector of weights <b>Ω</b> (2), which contains the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>.
-    The vector of weights <b>Ω</b> will be initialized by generating random values for each of its components <i>ω<sub>i</sub></i>.
+    The first element <i>ω<sub>0</sub></i> = <i>b</i>.
+    The mathematical model for the perceptron is simply the product of <i><b>X</b></i> and <b>Ω</b> (3), 
+    where the first column in <i><b>X</b></i> and the first element in <b>Ω</b> give the bias <i>b</i>, which is the vertical intercept.
 </p>
 <hr>
 <p align="center">
@@ -31,7 +34,7 @@
 <p align="center">
     <img src="photos/equation3.png">
 </p>
-
+<hr>
 <p align="center">
     <img src="photos/equation4.png">
 </p>
