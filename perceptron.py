@@ -14,12 +14,13 @@ class Network( object ) :
     def perceptron(
         self : object,
         X : NDArray[ float ], # input matrix
-        W : NDArray[ float ], # network weights
+        W : NDArray[ float ], # network weights,
+        b : float = 0         # bias, if not included in weights
         ) -> float :
         '''
         Perceptron Unit without Activation Function
         '''
-        return np.matmul( X, W )
+        return np.matmul( X, W ) + b
 
     def train(
         self : object,
@@ -73,7 +74,7 @@ class Network( object ) :
         assert self.__network.size > 0, \
                'Network must be trained.'
         self.__results = self.perceptron(
-            X, self.__network, self.__bias
+            X, self.__network[ 1 : ],  b = self.__network[ 0 ]
             )
         return
 
