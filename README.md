@@ -323,7 +323,7 @@ df[ 'NO2' ] = df[ 'NO2' ].apply( lambda x : np.log( x ) if x else np.NaN )
 ```
 
 <p align="justify">
-    The logorithm of zero is not defined. Rows contained undefined values should be removed.
+    The logorithm of zero is not defined. Rows containing undefined values should be removed.
 </p>
 
 ```python
