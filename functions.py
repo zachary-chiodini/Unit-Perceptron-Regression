@@ -53,7 +53,7 @@ def prettyPrint( mse, rsquare, network, netvars ) -> None :
            ' |' )
     for i in range( 1, len( network ) ) :
         print( '+-------+--' + '-'*modellen + '+' )
-        print( '|  w{}   | {}'.format( i + 1, network[ i ][ 0 ] ) +\
+        print( '|  w{}   | {}'.format( i, network[ i ][ 0 ] ) +\
                ' '*( modellen -\
                      len( str( network[ i ][ 0 ] ) ) ) +\
                ' |' )
