@@ -116,7 +116,6 @@
 <p align="center">
     <img src="photos/equation9.png" width=75%>
 </p>
-<hr>
 <p align="center">
     <img src="photos/equation10.png" width=75%>
 </p>
@@ -140,7 +139,6 @@
 <p align="center">
     <img src="photos/equation11.png" width=75%>
 </p>
-<hr>
 <p align="center">
     <img src="photos/equation12.png" width=75%>
 </p>
