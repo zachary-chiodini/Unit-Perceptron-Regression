@@ -28,7 +28,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation2.png">
+    <img src="photos/equation2.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -39,7 +39,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation3.png">
+    <img src="photos/equation3.png" width=75%>
 </p>
 
 <h1>Regression Analysis</h1>
@@ -52,7 +52,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation4.png">
+    <img src="photos/equation4.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -64,7 +64,7 @@
 </p>
 <hr>      
 <p align="center">
-    <img src="photos/equation5.png">
+    <img src="photos/equation5.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -85,7 +85,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation6.png">
+    <img src="photos/equation6.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -94,7 +94,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation7.png">
+    <img src="photos/equation7.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -106,7 +106,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation8.png">
+    <img src="photos/equation8.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -115,11 +115,11 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation9.png">
+    <img src="photos/equation9.png" width=75%>
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation10.png">
+    <img src="photos/equation10.png" width=75%>
 </p>
 <hr>
     
@@ -140,11 +140,11 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation11.png">
+    <img src="photos/equation11.png" width=75%>
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation12.png">
+    <img src="photos/equation12.png" width=75%>
 </p>
 <hr>
 <p align="jutify">
@@ -158,23 +158,23 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation13.png">
+    <img src="photos/equation13.png" width=75%>
 </p>
 
 <p align="center">
-    <img src="photos/equation14.png">
+    <img src="photos/equation14.png" width=75%>
 </p>
 
 <p align="center">
-    <img src="photos/equation15.png">
+    <img src="photos/equation15.png" width=75%>
 </p>
 
 <p align="center">
-    <img src="photos/equation16.png">
+    <img src="photos/equation16.png" width=75%>
 </p>
 
 <p align="center">
-    <img src="photos/equation17.png">
+    <img src="photos/equation17.png" width=75%>
 </p>
 
 ```python
