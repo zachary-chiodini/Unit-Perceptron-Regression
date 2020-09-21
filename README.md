@@ -25,6 +25,10 @@
 </p>
 
 <p align="center">
+    <img src="photos/paraboloid.png">
+</p>
+
+<p align="center">
     <img src="photos/equation7.png">
 </p>
 
