@@ -147,8 +147,8 @@
     The training algorithm used in "perceptron.py" is shown in (13), where ⊘ is a Hadamard division and denotes element-wise division,
     and <i>h << 1</i>.
     This training algoirthm has some additional operations not present in (11) or (12).
-    The learning rate is divided by the second derivative of the <i>SEE</i> function,
-    because a higher second derivative implies that the curvature of the <i>SEE</i> function is steeper and narrower,
+    The learning rate is divided by the second derivative of the <i>SEE</i> function.
+    A higher second derivative implies that the curvature of the <i>SEE</i> function is steeper and narrower,
     which means a smaller learning rate is necessary to avoid grossly overshooting the minimum.
     This training algorithm also utilizes the Nesterov accelerated gradient algorithm, which is beyond the scope of this page.
 </p>
