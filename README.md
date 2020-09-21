@@ -1,6 +1,6 @@
 <h1>The Perceptron Unit for Multiple Linear Regression Analysis</h1>
 
-<p align="center">
+<p align="jutify">
     This is a perceptron unit with training algorithm for mutiple linear regression analysis of data written in Python
 </p>
 
