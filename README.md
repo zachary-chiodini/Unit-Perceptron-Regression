@@ -21,11 +21,11 @@
 </p>
 
 <p align="center">
-    <img src="photos/equation6.png">
+    <img src="photos/paraboloid.png">
 </p>
 
 <p align="center">
-    <img src="photos/paraboloid.png">
+    <img src="photos/equation6.png">
 </p>
 
 <p align="center">
