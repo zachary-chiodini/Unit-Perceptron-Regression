@@ -161,21 +161,43 @@
     <img src="photos/equation13.png" width=75%>
 </p>
 
+<h1>Model Statistics</h1>
+
+<p align="jutify">
+    The variance of the model predictions (14) is given by the mean square error <i>MSE</i> of the model after training is complete.
+    The denominator <i>m</i> - <i>n</i> - 1 implies that the number of data points <i>m</i> used for training the model must
+    be greater than the number of features <i>n</i> plus 1, which corresponds to <i>b</i>.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation14.png" width=75%>
 </p>
-
+<hr>
+<p align="jutify">
+    The variance in the weights of the model is given by the variance covariance matrix (15).
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation15.png" width=75%>
 </p>
-
+<hr>
+<p align="jutify">
+    The total sum of squares <i>SEE</i> (16) is the sum over all squared differences between the measured outputs and their mean.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation16.png" width=75%>
 </p>
-
+<hr>
+<p align="jutify">
+     The coefficient of determination (17) measures the proportion of the variance in the measured outputs that is captured in the model's output.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation17.png" width=75%>
 </p>
+
+<h1>Try It</h1>
 
 ```python
 import pandas as pd, numpy as np
