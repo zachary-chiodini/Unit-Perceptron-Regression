@@ -132,7 +132,8 @@
     As the gradient approaches the minimum of the <i>SEE</i>, the slope will approach zero and the increments will become smaller and smaller.
 </p>
 <p align="justify">
-    The vector of weights <b>Ω</b> is initialized by generating a uniformly distributed random number for each of its elements <i>ω<sub>i</sub></i>.
+    The vector of weights <b>Ω</b> is initialized by generating a uniformly distributed random number for each of its elements <i>ω<sub>i</sub></i> 
+    before training begins.
 </p>
 <hr>
 <p align="center">
