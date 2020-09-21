@@ -98,10 +98,7 @@
 <hr>
 <p align="justify">
     The second order partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (8).
-    The second order derivative gives the rate of change of the slope, which in this case is a constant.
-    It is also always positive, because the <i>SSE</i> in this problem is a concave up polynomial.
-    Additionally, the size of this constant reflects how steep and narrow the <i>SSE</i> function is 
-    with respect to <i>ω<sub>k</sub></i>.
+    The second order derivative gives the rate of change of the slope, which in this problem is always a positive constant.
 </p>
 <hr>
 <p align="center">
@@ -146,7 +143,7 @@
 <p align="justify">
     The training algorithm used in "perceptron.py" is shown in (13), where ⊘ is a Hadamard division and denotes element-wise division,
     and <i>h << 1</i>.
-    This training algoirthm has some additions not present in (11) and (12).
+    This training algoirthm has some additional operations not present in (11) or (12).
     The learning rate is divided by the second derivative of the <i>SEE</i> function,
     because a higher second derivative implies that the curvature of the <i>SEE</i> function is steeper and narrower,
     which means a smaller learning rate is necessary to avoid grossly overshooting the minimum.
