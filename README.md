@@ -196,9 +196,9 @@
 <h1>Try It</h1>
 
 <p align="justify">
-    To demonstrate, data from a 1978 paper entitled 
+    To demonstrate, the "perceptron.py" module will be used on data from a 1978 paper entitled 
     "The Correlation of Animal Response Data with the Yields of Selected Thermal Decomposition Products for Typical Aircraft Interior Materials"
-    is used to fit a multiple linear regression model. The data is found in the file "air_int_incap.csv."
+    to fit a multiple linear regression model. The data is found in the file "air_int_incap.csv."
 </p>
 
 ```python
@@ -331,7 +331,7 @@ df = df[ [ 'time-to-incapacitation', 'CO', 'NO2' ] ].dropna( axis = 0 )
 ```
 
 <p align="justify">
-    Creating the input matrix <i><b>X</b></i> and vector of hypothetical outputs <i><b>Y</b></i>.
+    Here is the input matrix <i><b>X</b></i> and vector of hypothetical outputs <i><b>Y</b></i>.
 </p>
 
 ```python
@@ -340,8 +340,8 @@ Y = df[ [ 'time-to-incapacitation' ] ].to_numpy()
 ```
 
 <p align="justify">
-    Training the perceptron on the data until a near minimum is reached.
-    Values for the learning rate <i>r</i> and convergence <i>h</i> can be found by trial and error.
+    Now, the perceptron is trained on the data until a near minimum is reached.
+    Optimal values for the learning rate <i>r</i> and convergence <i>h</i> can be found by trial and error.
     If an overflow error is encountered, <i>r</i> is likely too large.
     If the algorithm does not converge, either <i>h</i> or <i>r</i> may be too small.
 </p>
@@ -387,7 +387,7 @@ network.showModel()
     The red vertical lines are the residuals.
     A contour plot of the model is projected onto the x-y plane.
     The animal will die the fastest where the color gradient is most red.
-    The code used to generate this plot can be fount in "plot.py."
+    The code used to generate this plot can be found in "plot.py."
 </p>
 <p align="justify">
     It comes with no surprise that higher concentrations of CO and NO<sub>2</sub> lead to a faster death.
