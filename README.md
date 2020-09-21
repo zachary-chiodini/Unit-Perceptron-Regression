@@ -78,35 +78,85 @@
 <p align="center">
     <img src="photos/paraboloid.png">
 </p>
-
+<hr>
+<p align="jutify">
+    Before taking the derivative, it is useful to decompose the matrix operation as shown (6). 
+    Taking a partial derivative with respect to
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation6.png">
 </p>
-
+<hr>
+<p align="jutify">
+    Taking a partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (7)
+    after good use of the chain rule.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation7.png">
 </p>
-
+<hr>
+<p align="jutify">
+    The second order partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (8).
+    The second order derivative gives the rate of change of the slope, which in this case is a constant.
+    It is also always positive, because the <i>SSE</i> in this problem is a concave up polynomial.
+    Additionally, the size of this constant reflects how steep and narrow the <i>SSE</i> function is 
+    with respect to <i>ω<sub>k</sub></i>.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation8.png">
 </p>
-
+<hr>
+<p align="jutify">
+    It is easy to see how the decomposed equations (7) and (8) can be packed back into their respective matrix counterparts for all values of <i>k</i>,
+    as shown in (9) and (10).
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation9.png">
 </p>
-
+<hr>
 <p align="center">
     <img src="photos/equation10.png">
 </p>
+<hr>
+    
+<h1>Gradient Descent Training Algorithm</h1>
 
+<p align="jutify">
+    In order to find the minimum of the <i>SEE</i> function, 
+    the perceptron uses the gradient descent alogithm to incrementally update each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
+    by a number proportional to the negative of the slope of <i>SEE</i> with respect to the coefficient <i>ω<sub>i</sub></i>,
+    shown in (11) and (12). The constant of proportionality <i>r</i> is called the learning rate.
+</p>
+
+<p align="jutify">
+    For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
+    the derivative of <i>SEE</i> with respect to <i>ω<sub>i</sub></i> will be negative and therefore <i>ω<sub>i</sub></i> will be decreased,
+    and the magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value.
+    As the gradient approaches the minimum of the <i>SEE</i>, the slope will approach zero and the increments will become smaller and smaller. 
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation11.png">
 </p>
-
+<hr>
 <p align="center">
     <img src="photos/equation12.png">
 </p>
-
+<hr>
+<p align="jutify">
+    The training algorithm used in "perceptron.py" is shown in (13), where ⊘ is a Hadamard division and denotes element-wise division,
+    and <i>h << 1</i>.
+    This training algoirthm has some additions not present in (11) and (12).
+    The learning rate is divided by the second derivative of the <i>SEE</i> function,
+    because a higher second derivative implies that the curvature of the <i>SEE</i> function is steeper and narrower,
+    which means a smaller learning rate is necessary to avoid grossly overshooting the minimum.
+    This training algorithm also utilizes the Nesterov accelerated gradient algorithm, which is beyond the scope of this page.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equation13.png">
 </p>
@@ -125,10 +175,6 @@
 
 <p align="center">
     <img src="photos/equation17.png">
-</p>
-
-<p align="center">
-    <img src="photos/equation18.png">
 </p>
 
 ```python
