@@ -125,12 +125,14 @@
     by a number proportional to the negative of the slope of <i>SEE</i> with respect to the coefficient <i>ω<sub>i</sub></i>,
     shown in (11) and more explicitly in (12). The constant of proportionality <i>r</i> is called the learning rate.
 </p>
-
 <p align="justify">
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
     the derivative of <i>SEE</i> with respect to <i>ω<sub>i</sub></i> will be negative and therefore <i>ω<sub>i</sub></i> will be decreased,
     and the magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value.
-    As the gradient approaches the minimum of the <i>SEE</i>, the slope will approach zero and the increments will become smaller and smaller. 
+    As the gradient approaches the minimum of the <i>SEE</i>, the slope will approach zero and the increments will become smaller and smaller.
+</p>
+<p align="justify">
+    The vector of weights <b>Ω</b> is initialized by generating a uniformly distributed random number for each of its elements <i>ω<sub>i</sub></i>.
 </p>
 <hr>
 <p align="center">
@@ -193,13 +195,23 @@
 <h1>Try It</h1>
 
 <p align="justify">
-     Parts per thousand concentration.
+    To demonstrate, data from a 1978 paper entitled 
+    "The Correlation of Animal Response Data with the Yields of Selected Thermal Decomposition Products for Typical Aircraft Interior Materials"
+    is used to fit a multiple linear regression model. The data is found in the file "air_int_incap.csv."
 </p>
 
 ```python
 import pandas as pd, numpy as np
 from perceptron import Network
 ```
+
+<p align="justify">
+    The data contains measurements of time taken to incapacitate animals after being exposed to combustion yields of 
+    CO, HCN, H<sub>2</sub>S, HCL, HBR, NO<sub>2</sub> and SO<sub>2</sub> gas. 
+    Time is measured in minutes and the concentration of gases are measured in parts per thousand.
+    The perceptron will be used to build a linear model that will predict the approximate length of time it will take to incapacitate an animal
+    when exposed to a known concentration of CO and NO<sub>2</sub>.
+</p>
 
 ```python
 df = pd.read_csv( 'air_int_incap.csv' )
@@ -299,28 +311,49 @@ df.head()
 </table>
 </div>
 
+<p align="justify">
+    Plotting concentration data over time shows an approximately exponential trend, which typically implies a first order rate reaction.
+    Therefore, the natural log of the concentrations was taken to produce an approximately linear trend.
+</p>
+
 ```python
 df[ 'CO' ] = df[ 'CO' ].apply( lambda x : np.log( x ) if x else np.NaN )
 df[ 'NO2' ] = df[ 'NO2' ].apply( lambda x : np.log( x ) if x else np.NaN )
 ```
 
+<p align="justify">
+    The logorithm of zero is not defined. Rows contained undefined values should be removed.
+</p>
 
 ```python
 df = df[ [ 'time-to-incapacitation', 'CO', 'NO2' ] ].dropna( axis = 0 )
 ```
 
+<p align="justify">
+    Creating the input matrix <i><b>X</b></i> and vector of hypothetical outputs <i><b>Y</b></i>.
+</p>
 
 ```python
 X = df[ [ 'CO', 'NO2' ] ].to_numpy()
 Y = df[ [ 'time-to-incapacitation' ] ].to_numpy()
 ```
 
+<p align="justify">
+    Training the perceptron on the data until a near minimum is reached.
+    Values for the learning rate <i>r</i> and convergence <i>h</i> can be found by trial and error.
+    If an overflow error is encountered, <i>r</i> is likely too large.
+    If the algorithm does not converge, either <i>h</i> or <i>r</i> may be too small.
+</p>
 
 ```python
 network = Network()
 network.train( X, Y, r = 0.01, h = 0.0000000001 )
 ```
 
+<p align="justify">
+    After training, the model and its statistics can be printed to the screen.
+    The R squared value is relatively low because the measured output data has a high amount of variance that was not captured in the model.
+</p>
 
 ```python
 network.showModel()
@@ -345,6 +378,20 @@ network.showModel()
     +-------+---------------------------------------------------+
     |  R^2  | 0.6094678120459519                                |
     +-------+---------------------------------------------------+
+
+<hr>
+<p align="justify">
+    The plot below shows the measured data on top of the computed model.
+    The circles are the measured data. The wireframe grid is the model.
+    The red vertical lines are the residuals.
+    A contour plot of the model is projected onto the x-y plane.
+    The animal will die the fastest where the color gradient is most red.
+    The code used to generate this plot can be fount in "plot.py."
+</p>
+<p align="justify">
+    It comes with no surprise that higher concentrations of CO and NO<sub>2</sub> lead to a faster death.
+    The slope for CO is steeper than that for NO<sub>2</sub>, implying it is better at incapacitating.
+</p>
 
 <p align="center">
     <img src="photos/incapacitation.png">
