@@ -2,15 +2,21 @@
 
 <p align="jutify">
     This is a perceptron unit with training algorithm for mutiple linear regression analysis of data written in Python.
-    Click <a href="https://github.com/zachary-chiodini/unit-perceptron-classification">here</a> to view how the perceptron unit 
-    can be used to classify linearly separable data.
 </p>
 
 <h1>Mathematical Model</h1>
+
 <p align="jutify">
-    This is a perceptron unit with training algorithm for mutiple linear regression analysis of data written in Python
+    A perceptron unit with no activation function can be used to carry out multiple linear regression analysis.
+    Click <a href="https://github.com/zachary-chiodini/unit-perceptron-classification">here</a> to view how the perceptron unit 
+    with a stepwise activation function can be used to classify linearly separable data.
 </p>
 
+<p align="jutify">
+    The perceptron unit will accept two inputs. One is the input matrix <b>X</b> (1), 
+    where m is the number of observations and n is the number of features.
+    The other is the vector of weights <b>Ω</b> (2), which contains the weight or coefficient ω<sub>i</sub> for each feature in <b>X</b>.
+</p>
 <p align="center">
     <img src="photos/equation1.png">
 </p>
