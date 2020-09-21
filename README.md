@@ -1,7 +1,7 @@
 # unit-perceptron-regression
 
 <p align="center">
-    <img src="photos/equation1.png" width=50%>
+    <img src="photos/equation1.png">
 </p>
 
 <p align="center">
