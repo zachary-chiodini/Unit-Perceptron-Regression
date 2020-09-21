@@ -162,7 +162,7 @@
 <p align="justify">
     The variance of the model predictions (14) is given by the mean square error <i>MSE</i> of the model after training is complete.
     The denominator <i>m</i> - <i>n</i> - 1 implies that the number of data points <i>m</i> used for training the model must
-    be greater than the number of features <i>n</i> plus 1, which corresponds to <i>b</i>.
+    be greater than the number of features <i>n</i> plus 1. The number 1 is there to account for <i>b</i>.
 </p>
 <hr>
 <p align="center">
