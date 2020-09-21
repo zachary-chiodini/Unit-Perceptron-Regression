@@ -75,3 +75,7 @@
 <p align="center">
     <img src="photos/equation18.png">
 </p>
+
+<p align="center">
+    <img src="photos/incapacitation.png">
+</p>
