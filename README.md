@@ -16,6 +16,7 @@
     The perceptron unit will accept two inputs. One is a matrix <i><b>X</b></i> (1), 
     where <i>m</i> is the number of observations and <i>n</i> is the number of features.
     The other is a column vector of weights <b>Ω</b> (2), which contains the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>.
+    The vector of weights <b>Ω</b> is initialized with random values for each of its components <i>ω<sub>i</sub></i>.
 </p>
 <p align="center">
     <img src="photos/equation1.png">
