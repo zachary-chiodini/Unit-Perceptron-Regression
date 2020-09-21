@@ -199,6 +199,10 @@
 
 <h1>Try It</h1>
 
+<p align="jutify">
+     Parts per thousand concentration.
+</p>
+
 ```python
 import pandas as pd, numpy as np
 from perceptron import Network
