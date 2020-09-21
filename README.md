@@ -1,6 +1,13 @@
 <h1>The Perceptron Unit for Multiple Linear Regression Analysis</h1>
 
 <p align="jutify">
+    This is a perceptron unit with training algorithm for mutiple linear regression analysis of data written in Python.
+    Click <a href="https://github.com/zachary-chiodini/unit-perceptron-classification">here</a> to view how the percpeptron unt 
+    can be used to classify linearly separable data.
+</p>
+
+<h1>Mathematical Model</h1>
+<p align="jutify">
     This is a perceptron unit with training algorithm for mutiple linear regression analysis of data written in Python
 </p>
 
