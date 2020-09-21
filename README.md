@@ -14,9 +14,9 @@
 
 <p align="jutify">
     The perceptron unit will accept two inputs. One is a matrix <i><b>X</b></i> (1), 
-    where <i>m</i> is the number of data points and <i>n</i> is the number of independent variables in the model. The first column <i>x<sub>*,0</sub></i> is set to 1.
-    The other is a column vector of weights <b>Ω</b> (2), which contains the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>,
-    with <i>ω<sub>0</sub></i> = <i>b</i>.
+    where <i>m</i> is the number of data points that will be used to train or test the model 
+    and <i>n</i> is the number of independent variables, or features, that will be used by the model. 
+    The other is a column vector of weights <b>Ω</b> (2), which contains the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>.
     The vector of weights <b>Ω</b> will be initialized by generating random values for each of its components <i>ω<sub>i</sub></i>.
 </p>
 <hr>
