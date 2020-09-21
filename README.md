@@ -80,8 +80,7 @@
 </p>
 <hr>
 <p align="justify">
-    Before taking the derivative, it is useful to decompose the matrix operation as shown (6). 
-    Taking a partial derivative with respect to
+    Before taking the derivative, it is useful to decompose the matrix operation as shown in (6) to see how it is done.
 </p>
 <hr>
 <p align="center">
