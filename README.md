@@ -391,7 +391,6 @@ network.showModel()
 </p>
 <p align="justify">
     It comes with no surprise that higher concentrations of CO and NO<sub>2</sub> lead to a faster death.
-    The slope for CO is steeper than that for NO<sub>2</sub>, implying it is better at incapacitating.
     The residuals show the variance in the measured output not captured by the model.
     Although this lead to a relatively small R sqaured value, 
     it is clear from the plot that this variance shows no clear trend 
