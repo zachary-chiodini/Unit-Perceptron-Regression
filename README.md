@@ -190,7 +190,7 @@
 </p>
 <hr>
 <p align="jutify">
-     The coefficient of determination (17) measures the proportion of the variance in the measured outputs that is captured in the model's output.
+     The coefficient of determination (17) measures the proportion of the variance in the measured outputs that is explained by the model's inputs.
 </p>
 <hr>
 <p align="center">
