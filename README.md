@@ -1,17 +1,17 @@
 <h1>The Perceptron Unit for Multiple Linear Regression Analysis</h1>
 
-<p align="jutify">
+<p align="justify">
     This is a perceptron unit with training algorithm for multiple linear regression analysis of data written in Python.
 </p>
 
 <h1>Mathematical Model</h1>
 
-<p align="jutify">
+<p align="justify">
     A perceptron unit with no activation function can be used to carry out multiple linear regression analysis.
     Click <a href="https://github.com/zachary-chiodini/unit-perceptron-classification">here</a> to view how the perceptron unit 
     with a stepwise activation function can be used to classify linearly separable data.
 </p>
-<p align="jutify">
+<p align="justify">
     The perceptron unit will accept two inputs. One is a matrix <i><b>X</b></i> (1), 
     where <i>m</i> is the number of data points that will be used to train or test the model 
     and <i>n</i> is the number of independent variables, or features, that will be used by the model.
@@ -22,7 +22,7 @@
     <img src="photos/equation1.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The other input is a column vector of weights <b>Ω</b> (2), which contain the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>.
     The first element <i>ω<sub>0</sub></i> = <i>b</i>.
 </p>
@@ -31,7 +31,7 @@
     <img src="photos/equation2.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The mathematical model for the perceptron <i><b>P</b></i> is simply the product of <i><b>X</b></i> and <b>Ω</b> (3), 
     where the first column in <i><b>X</b></i> and the first element in <b>Ω</b> give the bias <i>b</i>.
     Geometrically speaking, the perceptron generates a hyperplane having <i>n</i> slopes in <i>n</i> dimensions,
@@ -44,7 +44,7 @@
 <hr>
 <h1>Regression Analysis</h1>
 
-<p align="jutify">
+<p align="justify">
     The column vector <b><i>Y</i></b> (4) represents the dependent variable.
     Each element <i>y<sub>i</sub></i> is an empirical measurement and the output of a hypothetical model after inputing values for 
     <i>x<sub>i,1</sub></i>, <i>x<sub>i,2</sub></i>, ..., <i>x<sub>i,n</sub></i>. If the hypothetical model is approximately linear,
@@ -55,7 +55,7 @@
     <img src="photos/equation4.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     However, the parameters <b>Ω</b> for this model are not yet known.
     Measuring how close a model <i><b>P</b></i> is to approximating the measured outputs
     can be achieved by calculating the sum of squared errors <i>SSE</i> (5), 
@@ -67,7 +67,7 @@
     <img src="photos/equation5.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The model is as close to approximating the outputs when the <i>SSE</i> reaches its minimum value.
     When the number of data points <i>m</i> = 2, a plot of the <i>SSE</i> over <i>p<sub>1</sub></i> and <i>p<sub>0</sub></i> is a paraboloid, shown below.
     The minimum of the function is easily seen. The is where the absolute value of the gradient of the 
@@ -79,7 +79,7 @@
     <img src="photos/paraboloid.png">
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     Before taking the derivative, it is useful to decompose the matrix operation as shown (6). 
     Taking a partial derivative with respect to
 </p>
@@ -88,7 +88,7 @@
     <img src="photos/equation6.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     Taking a partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (7)
     after good use of the chain rule.
 </p>
@@ -97,7 +97,7 @@
     <img src="photos/equation7.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The second order partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (8).
     The second order derivative gives the rate of change of the slope, which in this case is a constant.
     It is also always positive, because the <i>SSE</i> in this problem is a concave up polynomial.
@@ -109,7 +109,7 @@
     <img src="photos/equation8.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     It is easy to see how the decomposed equations (7) and (8) can be packed back into their respective matrix counterparts for all values of <i>k</i>,
     as shown in (9) and (10).
 </p>
@@ -124,14 +124,14 @@
 <hr>
 <h1>Gradient Descent Training Algorithm</h1>
 
-<p align="jutify">
+<p align="justify">
     In order to find the minimum of the <i>SEE</i> function, 
     the perceptron uses the gradient descent alogithm to incrementally update each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
     by a number proportional to the negative of the slope of <i>SEE</i> with respect to the coefficient <i>ω<sub>i</sub></i>,
     shown in (11) and (12). The constant of proportionality <i>r</i> is called the learning rate.
 </p>
 
-<p align="jutify">
+<p align="justify">
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
     the derivative of <i>SEE</i> with respect to <i>ω<sub>i</sub></i> will be negative and therefore <i>ω<sub>i</sub></i> will be decreased,
     and the magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value.
@@ -146,7 +146,7 @@
     <img src="photos/equation12.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The training algorithm used in "perceptron.py" is shown in (13), where ⊘ is a Hadamard division and denotes element-wise division,
     and <i>h << 1</i>.
     This training algoirthm has some additions not present in (11) and (12).
@@ -162,7 +162,7 @@
 <hr>
 <h1>Model Statistics</h1>
 
-<p align="jutify">
+<p align="justify">
     The variance of the model predictions (14) is given by the mean square error <i>MSE</i> of the model after training is complete.
     The denominator <i>m</i> - <i>n</i> - 1 implies that the number of data points <i>m</i> used for training the model must
     be greater than the number of features <i>n</i> plus 1, which corresponds to <i>b</i>.
@@ -172,7 +172,7 @@
     <img src="photos/equation14.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The variance in the weights of the model is given by the variance covariance matrix (15).
 </p>
 <hr>
@@ -180,7 +180,7 @@
     <img src="photos/equation15.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
     The total sum of squares <i>SEE</i> (16) is the sum over all squared differences between the measured outputs and their mean.
 </p>
 <hr>
@@ -188,7 +188,7 @@
     <img src="photos/equation16.png" width=75%>
 </p>
 <hr>
-<p align="jutify">
+<p align="justify">
      The coefficient of determination (17) measures the proportion of the variance in the measured outputs that is explained by the model's inputs.
 </p>
 <hr>
@@ -198,7 +198,7 @@
 <hr>
 <h1>Try It</h1>
 
-<p align="jutify">
+<p align="justify">
      Parts per thousand concentration.
 </p>
 
