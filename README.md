@@ -45,10 +45,10 @@
 <h1>Regression Analysis</h1>
 
 <p align="jutify">
-    The column vector <b><i>Y<i/></b> (4) represents the dependent variable.
+    The column vector <b><i>Y</i></b> (4) represents the dependent variable.
     Each element <i>y<sub>i</sub><i/> is an empirical measurement and the output of a hypothetical model after inputing values for 
     <i>x<sub>i,1</sub></i>, <i>x<sub>i,2</sub></i>, ..., <i>x<sub>i,n</sub></i>. If the hypothetical model is approximately linear,
-    the perceptron <i><b>P</b></i> can be used to generate an actual model that approximates the measured outputs in <b><i>Y<i/></b>.
+    the perceptron <i><b>P</b></i> can be used to generate an actual model that approximates the measured outputs in <b><i>Y</i></b>.
 </p>
 <hr>
 <p align="center">
