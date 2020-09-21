@@ -2,7 +2,7 @@
 
 <p align="jutify">
     This is a perceptron unit with training algorithm for mutiple linear regression analysis of data written in Python.
-    Click <a href="https://github.com/zachary-chiodini/unit-perceptron-classification">here</a> to view how the percpeptron unt 
+    Click <a href="https://github.com/zachary-chiodini/unit-perceptron-classification">here</a> to view how the perceptron unit 
     can be used to classify linearly separable data.
 </p>
 
