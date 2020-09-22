@@ -219,6 +219,11 @@ import pandas as pd, numpy as np
 from perceptron import Network
 ```
 
+```python
+df = pd.read_csv( 'air_int_incap.csv' )
+df.head()
+```
+
 <p align="justify">
     The data contains measurements of time taken to incapacitate animals after being exposed to combustion yields of 
     CO, HCN, H<sub>2</sub>S, HCL, HBR, NO<sub>2</sub> and SO<sub>2</sub> gas. 
@@ -226,11 +231,6 @@ from perceptron import Network
     The perceptron will be used to build a linear model that will predict the approximate length of time it will take to incapacitate an animal
     when exposed to known concentrations of CO and NO<sub>2</sub>.
 </p>
-
-```python
-df = pd.read_csv( 'air_int_incap.csv' )
-df.head()
-```
 
 <div>
 <table border="1" class="dataframe">
