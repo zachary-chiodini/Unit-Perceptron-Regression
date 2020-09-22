@@ -407,6 +407,7 @@ network.showModel()
     it is clear from the plot that this variance shows no clear trend 
     and a linear model was most likely the best choice to capture the relationship between time to incapacitate an animal
     and the natural logorithm of CO and NO<sub>2</sub> concentrations.
+    You may investigate this plot more thoroughly by running "plot.py."
 </p>
 
 <p align="center">
