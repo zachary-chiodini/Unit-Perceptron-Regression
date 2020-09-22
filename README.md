@@ -1,11 +1,9 @@
 <h1>The Perceptron Unit for Multiple Linear Regression Analysis</h1>
-
-<p align="left">
-    <img src="photos/dependencies.png" width="244px">
-</p>
-
 <p align="justify">
     This is a perceptron unit with training algorithm for multiple linear regression analysis of data written in Python.
+</p>
+<p align="left">
+    <img src="photos/dependencies.png" width="244px">
 </p>
 
 <h1>Mathematical Model</h1>
