@@ -176,7 +176,7 @@
 </p>
 <hr>
 <p align="justify">
-    The total sum of squares <i>SSE</i> (15) is the sum over all squared differences between the measured outputs and their mean.
+    The total sum of squares <i>TSS</i> (15) is the sum over all squared differences between the measured outputs and their mean.
 </p>
 <hr>
 <p align="center">
