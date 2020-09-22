@@ -122,7 +122,7 @@
     In order to find the minimum of the <i>SSE</i> function, the perceptron uses the gradient descent algorithm. 
     This algorithm incrementally updates each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
     by a number proportional to the negative of the slope of the <i>SSE</i> at <b>Ω</b> with respect to the coefficient <i>ω<sub>i</sub></i>,
-    shown in (11) and more explicitly in (12). The constant of proportionality <i>r</i> is called the learning rate.
+    shown in (11). The constant of proportionality <i>r</i> is called the learning rate.
 </p>
 <p align="justify"> 
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
@@ -140,14 +140,11 @@
 <p align="center">
     <img src="photos/equation11.png" width=75%>
 </p>
-<p align="center">
-    <img src="photos/equation12.png" width=75%>
-</p>
 <hr>
 <p align="justify">
-    The training algorithm used in "perceptron.py" is shown in (13), where ⊘ is a Hadamard division and denotes element-wise division,
+    The training algorithm used in "perceptron.py" is shown in (12), where ⊘ is a Hadamard division and denotes element-wise division,
     and <i>h << 1</i>.
-    This training algoirthm has some additional operations not present in (11) or (12).
+    This training algoirthm has some additional operations not present in (11).
     The learning rate is divided by the second derivative of the <i>SSE</i> function.
     A higher second derivative implies that the curvature of the <i>SSE</i> function is steeper and narrower,
     which means a smaller learning rate is necessary to avoid grossly overshooting the minimum.
@@ -155,15 +152,23 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation13.png" width=75%>
+    <img src="photos/equation12.png" width=75%>
 </p>
 <hr>
 <h1>Model Statistics</h1>
 
 <p align="justify">
-    The variance of the model predictions (14) is given by the mean square error <i>MSE</i> of the model after training is complete.
+    The variance of the model predictions (13) is given by the mean square error <i>MSE</i> of the model after training is complete.
     The denominator <i>m</i> - <i>n</i> - 1 implies that the number of data points <i>m</i> used for training the model must
     be greater than the number of features <i>n</i> plus 1. The number 1 is there to account for <i>b</i>.
+</p>
+<hr>
+<p align="center">
+    <img src="photos/equation13.png" width=75%>
+</p>
+<hr>
+<p align="justify">
+    The variance in the weights of the model is given by the variance covariance matrix (14).
 </p>
 <hr>
 <p align="center">
@@ -171,7 +176,7 @@
 </p>
 <hr>
 <p align="justify">
-    The variance in the weights of the model is given by the variance covariance matrix (15).
+    The total sum of squares <i>SSE</i> (15) is the sum over all squared differences between the measured outputs and their mean.
 </p>
 <hr>
 <p align="center">
@@ -179,19 +184,11 @@
 </p>
 <hr>
 <p align="justify">
-    The total sum of squares <i>SSE</i> (16) is the sum over all squared differences between the measured outputs and their mean.
+     The coefficient of determination (16) measures the proportion of the variance in the measured outputs that is explained by the model's inputs.
 </p>
 <hr>
 <p align="center">
     <img src="photos/equation16.png" width=75%>
-</p>
-<hr>
-<p align="justify">
-     The coefficient of determination (17) measures the proportion of the variance in the measured outputs that is explained by the model's inputs.
-</p>
-<hr>
-<p align="center">
-    <img src="photos/equation17.png" width=75%>
 </p>
 <hr>
 <h1>Try It</h1>
