@@ -142,13 +142,26 @@
 </p>
 <hr>
 <p align="justify">
-    The training algorithm used in "perceptron.py" is shown in (12), where ⊘ denotes Hadamard division (element-wise division) and <i>h << 1</i>.
+    The training algorithm used in "perceptron.py" is shown in (12), 
+    where ⊘ denotes Hadamard division (element-wise division) and the convergence <i>h</i> << 1.
     This training algoirthm has some additional operations not present in (11).
     The learning rate is divided by the second derivative of the <i>SSE</i> function.
     A larger second derivative implies that the curvature of the <i>SSE</i> function is steeper and narrower,
     which means a smaller learning rate is necessary to avoid grossly overshooting the minimum after incrementing each element in <b>Ω</b>.
     By dividing the learning rate by the second derivative, the potential for overshooting is reduced.
     This training algorithm also utilizes the Nesterov accelerated gradient algorithm, which is beyond the scope of this page.
+</p>
+<p align="justify">
+    Optimal values for the learning rate <i>r</i> and convergence <i>h</i> can be found by trial and error.
+    If an overflow error is encountered, <i>r</i> is likely too large.
+    If the algorithm does not converge, either <i>r</i> or <i>h</i> may be too small.
+</p>
+<p align="justify">
+    This perceptron contains some basic optimization in its learning algorithm.
+    If the data is not too large, it can train most linear data models in a timely manner 
+    after finding an optimal value for <i>r</i> and a sufficient value for <i>h</i>.
+    However, mileage may vary. 
+    Refer to additional learning optimization algorithms if a sufficient value for <i>h</i> cannot be promptly achieved.
 </p>
 <hr>
 <p align="center">
@@ -339,16 +352,6 @@ Y = df[ [ 'time-to-incapacitation' ] ].to_numpy()
 
 <p align="justify">
     The perceptron is trained on the data until a near minimum is reached.
-    Optimal values for the learning rate <i>r</i> and convergence <i>h</i> can be found by trial and error.
-    If an overflow error is encountered, <i>r</i> is likely too large.
-    If the algorithm does not converge, either <i>h</i> or <i>r</i> may be too small.
-</p>
-<p align="justify">
-    This perceptron contains some basic optimization in its learning algorithm.
-    For most linear data models, 
-    training can be achieved in a timely manner after finding an optimal value for <i>r</i>
-    and a sufficient value for <i>h</i>.
-    However, if your mileage varies, refer to additional learning optimization algorithms
 </p>
 
 ```python
