@@ -159,7 +159,7 @@
     If the algorithm does not converge, either <i>r</i> or <i>h</i> may be too small.
 </p>
 <p align="justify">
-    This perceptron contains some basic optimization in its learning algorithm.
+    The "perceptron.py" module contains some basic optimization methods in its learning algorithm.
     If the data is not too large, it can train most linear data models in a timely manner 
     after finding an optimal value for <i>r</i> and a sufficient value for <i>h</i>.
     However, mileage may vary. 
