@@ -397,7 +397,6 @@ network.showModel()
     The red vertical lines are the residuals.
     A contour plot of the model is projected onto the x-y plane.
     The animal will die the fastest where the color gradient is most red.
-    The code used to generate this plot can be found in "plot.py."
 </p>
 <p align="justify">
     It comes with no surprise that higher concentrations of CO and NO<sub>2</sub> lead to a faster death.
