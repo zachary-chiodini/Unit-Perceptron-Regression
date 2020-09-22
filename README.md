@@ -147,7 +147,7 @@
     This training algoirthm has some additional operations not present in (11).
     The learning rate is divided by the second derivative of the <i>SSE</i> function.
     A larger second derivative implies that the curvature of the <i>SSE</i> function is steeper and narrower,
-    which means a smaller learning rate is necessary to avoid grossly overshooting the minimum of the SSE after incrementing each element in <b>Ω</b>.
+    which means a smaller learning rate is necessary to avoid grossly overshooting the minimum.
     Dividing the learning rate by the second derivative reduces the potential for overshooting.
     This training algorithm also utilizes the Nesterov accelerated gradient algorithm, which is beyond the scope of this page.
 </p>
