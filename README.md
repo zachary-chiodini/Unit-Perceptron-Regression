@@ -119,8 +119,8 @@
 <h1>Gradient Descent Training Algorithm</h1>
 
 <p align="justify">
-    In order to find the minimum of the <i>SEE</i> function, 
-    the perceptron uses the gradient descent algorithm to incrementally update each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
+    In order to find the minimum of the <i>SEE</i> function, the perceptron uses the gradient descent algorithm. 
+    This algorithm incrementally updates each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
     by a number proportional to the negative of the slope of <i>SEE</i> with respect to the coefficient <i>ω<sub>i</sub></i>,
     shown in (11) and more explicitly in (12). The constant of proportionality <i>r</i> is called the learning rate.
 </p>
