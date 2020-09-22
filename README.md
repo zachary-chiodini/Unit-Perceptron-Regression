@@ -126,7 +126,7 @@
 </p>
 <p align="justify"> 
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
-    the derivative of <i>SSE</i> with respect to <i>ω<sub>i</sub></i> will be positive.
+    the derivative of <i>SSE</i> with respect to <i>ω<sub>i</sub></i> at <b>Ω</b> will be positive.
     Therefore, <i>ω<sub>i</sub></i> is decreased after the increment.
     The magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value
     so that the magnitude of the increment will be greater when <i>ω<sub>i</sub></i> is farther from the optimal value.
