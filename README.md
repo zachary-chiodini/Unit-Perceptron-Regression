@@ -21,7 +21,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation1.png" width=75%>
+    <img src="photos/equations/equation1.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -30,7 +30,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation2.png" width=75%>
+    <img src="photos/equations/equation2.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -41,7 +41,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation3.png" width=75%>
+    <img src="photos/equations/equation3.png" width=75%>
 </p>
 <hr>
 <h1>Regression Analysis</h1>
@@ -54,7 +54,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation4.png" width=75%>
+    <img src="photos/equations/equation4.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -65,7 +65,7 @@
 </p>
 <hr>      
 <p align="center">
-    <img src="photos/equation5.png" width=75%>
+    <img src="photos/equations/equation5.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -85,7 +85,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation6.png" width=75%>
+    <img src="photos/equations/equation6.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -94,7 +94,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation7.png" width=75%>
+    <img src="photos/equations/equation7.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -103,7 +103,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation8.png" width=75%>
+    <img src="photos/equations/equation8.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -112,10 +112,10 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation9.png" width=75%>
+    <img src="photos/equations/equation9.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation10.png" width=75%>
+    <img src="photos/equations/equation10.png" width=75%>
 </p>
 <hr>
 <h1>Gradient Descent Training Algorithm</h1>
@@ -140,7 +140,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation11.png" width=75%>
+    <img src="photos/equations/equation11.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -167,7 +167,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation12.png" width=75%>
+    <img src="photos/equations/equation12.png" width=75%>
 </p>
 <hr>
 <h1>Model Statistics</h1>
@@ -179,7 +179,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation13.png" width=75%>
+    <img src="photos/equations/equation13.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -187,7 +187,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation14.png" width=75%>
+    <img src="photos/equations/equation14.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -195,7 +195,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation15.png" width=75%>
+    <img src="photos/equations/equation15.png" width=75%>
 </p>
 <hr>
 <p align="justify">
@@ -203,7 +203,7 @@
 </p>
 <hr>
 <p align="center">
-    <img src="photos/equation16.png" width=75%>
+    <img src="photos/equations/equation16.png" width=75%>
 </p>
 <hr>
 <h1>Try It</h1>
