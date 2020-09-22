@@ -121,7 +121,7 @@
 <p align="justify">
     In order to find the minimum of the <i>SSE</i> function, the perceptron uses the gradient descent algorithm. 
     This algorithm incrementally updates each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
-    by a number proportional to the negative of the slope of the <i>SSE</i> at <b>Ω</b> with respect to the coefficient <i>ω<sub>i</sub></i>,
+    by a number proportional to the negative of the slope of the <i>SSE</i> with respect to the coefficient <i>ω<sub>i</sub></i> at <b>Ω</b>,
     shown in (11). The constant of proportionality <i>r</i> is called the learning rate.
 </p>
 <p align="justify"> 
