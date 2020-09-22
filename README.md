@@ -87,7 +87,7 @@
 </p>
 <hr>
 <p align="justify">
-    Taking a partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (7)
+    Taking a partial derivative with respect to the <i>k<sup>th</sup></i> element in <b>Ω</b> gives (7)
     after good use of the chain rule.
 </p>
 <hr>
