@@ -119,18 +119,18 @@
 <h1>Gradient Descent Training Algorithm</h1>
 
 <p align="justify">
-    In order to find the minimum of the <i>SEE</i> function, the perceptron uses the gradient descent algorithm. 
+    In order to find the minimum of the <i>SSE</i> function, the perceptron uses the gradient descent algorithm. 
     This algorithm incrementally updates each coefficient <i>ω<sub>i</sub></i> in <b>Ω</b>
-    by a number proportional to the negative of the slope of <i>SEE</i> with respect to the coefficient <i>ω<sub>i</sub></i>,
+    by a number proportional to the negative of the slope of <i>SSE</i> with respect to the coefficient <i>ω<sub>i</sub></i>,
     shown in (11) and more explicitly in (12). The constant of proportionality <i>r</i> is called the learning rate.
 </p>
 <p align="justify">
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
-    the derivative of <i>SEE</i> with respect to <i>ω<sub>i</sub></i> will be positive.
+    the derivative of <i>SSE</i> with respect to <i>ω<sub>i</sub></i> will be positive.
     Therefore, <i>ω<sub>i</sub></i> is decreased after the increment.
     The magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value
     so that the magnitude of the increment will be greater when <i>ω<sub>i</sub></i> is farther from the optimal value.
-    As the gradient approaches the minimum of the <i>SEE</i>, the slope will approach zero and the increments will become smaller and smaller.
+    As the gradient approaches the minimum of the <i>SSE</i>, the slope will approach zero and the increments will become smaller and smaller.
 </p>
 <p align="justify">
     The vector of weights <b>Ω</b> is initialized by generating a uniformly distributed random number for each of its elements <i>ω<sub>i</sub></i> 
@@ -148,8 +148,8 @@
     The training algorithm used in "perceptron.py" is shown in (13), where ⊘ is a Hadamard division and denotes element-wise division,
     and <i>h << 1</i>.
     This training algoirthm has some additional operations not present in (11) or (12).
-    The learning rate is divided by the second derivative of the <i>SEE</i> function.
-    A higher second derivative implies that the curvature of the <i>SEE</i> function is steeper and narrower,
+    The learning rate is divided by the second derivative of the <i>SSE</i> function.
+    A higher second derivative implies that the curvature of the <i>SSE</i> function is steeper and narrower,
     which means a smaller learning rate is necessary to avoid grossly overshooting the minimum.
     This training algorithm also utilizes the Nesterov accelerated gradient algorithm, which is beyond the scope of this page.
 </p>
@@ -179,7 +179,7 @@
 </p>
 <hr>
 <p align="justify">
-    The total sum of squares <i>SEE</i> (16) is the sum over all squared differences between the measured outputs and their mean.
+    The total sum of squares <i>SSE</i> (16) is the sum over all squared differences between the measured outputs and their mean.
 </p>
 <hr>
 <p align="center">
