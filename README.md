@@ -1,5 +1,9 @@
 <h1>The Perceptron Unit for Multiple Linear Regression Analysis</h1>
 
+<p align="left">
+    <img src="photos/dependencies.png">
+</p>
+
 <p align="justify">
     This is a perceptron unit with training algorithm for multiple linear regression analysis of data written in Python.
 </p>
@@ -18,9 +22,7 @@
     Every element in the first column <i>x<sub>i,0</sub></i> = 1.
 </p>
 <hr>
-<p align="center">
-    <img src="photos/equation1.png" width=75%>
-</p>
+c
 <hr>
 <p align="justify">
     The other input is a column vector of weights <b>Ω</b> (2), which contain the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>.
