@@ -98,7 +98,7 @@
 </p>
 <hr>
 <p align="justify">
-    The second order partial derivative with respect to the <i>k<sup>th</sup></i> coefficient in <b>Ω</b> gives (8).
+    The second order partial derivative with respect to the <i>k<sup>th</sup></i> element in <b>Ω</b> gives (8).
     The second order derivative gives the rate of change of the slope, which in this problem is always a positive constant.
 </p>
 <hr>
