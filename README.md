@@ -48,7 +48,7 @@
     The column vector <b><i>Y</i></b> (4) represents the dependent variable.
     Each element <i>y<sub>i</sub></i> is an empirical measurement and the output of a hypothetical model after inputing values for 
     <i>x<sub>i,1</sub></i>, <i>x<sub>i,2</sub></i>, ..., <i>x<sub>i,n</sub></i>. If the hypothetical model is approximately linear,
-    the perceptron <i><b>P</b></i> can be used to generate an actual model that approximates the measured outputs in <b><i>Y</i></b>.
+    the perceptron <i><b>P</b></i> can be used to generate an actual model that approximates the hypothetical outputs in <b><i>Y</i></b>.
 </p>
 <hr>
 <p align="center">
@@ -56,10 +56,9 @@
 </p>
 <hr>
 <p align="justify">
-    However, the parameters <b>Ω</b> for this model are not yet known.
-    Measuring how close a model <i><b>P</b></i> is to approximating the measured outputs
+    Measuring how close a model <i><b>P</b></i> is to approximating the hypothetical outputs
     can be achieved by calculating the sum of squared errors <i>SSE</i> (5), 
-    which is the sum of the squared differences between the model's output and the measured outputs.
+    which is the sum of the squared differences between the model's output and the hypothetical outputs.
     These differences are called residuals. Equation (5) is also called the sum of squared residuals.
 </p>
 <hr>      
@@ -68,9 +67,9 @@
 </p>
 <hr>
 <p align="justify">
-    The model is as close to approximating the outputs when the <i>SSE</i> reaches its minimum value.
+    The model is as close as possible to approximating the hypothetical outputs when the <i>SSE</i> reaches a minimum value.
     When the number of data points <i>m</i> = 2, a plot of the <i>SSE</i> over <i>p<sub>1</sub></i> and <i>p<sub>2</sub></i> is a paraboloid, shown below.
-    The minimum of the function is easily seen. The is where the absolute value of the gradient of the 
+    The minimum of the function can be easily seen. This is where the absolute value of the gradient of the 
     <i>SSE</i> with respect to each element in <i><b>P</b></i> is precisely zero. 
     Though harder to visualize, the plot is analogous for large values of <i>m</i>.
 </p>
