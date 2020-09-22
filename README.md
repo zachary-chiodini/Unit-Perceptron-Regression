@@ -128,7 +128,7 @@
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
     the derivative of the <i>SSE</i> with respect to <i>ω<sub>i</sub></i> at <b>Ω</b> will be positive,
     and <i>ω<sub>i</sub></i> is decreased after the increment.
-    The magnitude of the slope, and therefore the increment, is proportional to how far off <i>ω<sub>i</sub></i> is from the optimal value.
+    The magnitude of the derivative, and therefore the increment, is proportional to how far off <i>ω<sub>i</sub></i> is from the optimal value.
     As the gradient approaches the minimum of the <i>SSE</i>, the slopes will approach zero and the increments will become smaller and smaller.
 </p>
 <p align="justify">
