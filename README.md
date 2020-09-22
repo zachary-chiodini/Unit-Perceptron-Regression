@@ -126,8 +126,10 @@
 </p>
 <p align="justify">
     For example, if a coefficient <i>ω<sub>i</sub></i> in the model <i><b>P</b></i> is too large, 
-    the derivative of <i>SEE</i> with respect to <i>ω<sub>i</sub></i> will be negative and therefore <i>ω<sub>i</sub></i> will be decreased,
-    and the magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value.
+    the derivative of <i>SEE</i> with respect to <i>ω<sub>i</sub></i> will be positive.
+    Therefore, <i>ω<sub>i</sub></i> is decreased after the increment.
+    The magnitude of the slope will correspond to how far off <i>ω<sub>i</sub></i> is from the measured value
+    so that the magnitude of the increment will be greater when <i>ω<sub>i</sub></i> is farther from the optimal value.
     As the gradient approaches the minimum of the <i>SEE</i>, the slope will approach zero and the increments will become smaller and smaller.
 </p>
 <p align="justify">
