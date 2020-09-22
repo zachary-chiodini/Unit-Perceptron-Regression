@@ -142,8 +142,7 @@
 </p>
 <hr>
 <p align="justify">
-    The training algorithm used in "perceptron.py" is shown in (12), where ⊘ is the Hadamard division and denotes element-wise division,
-    and <i>h << 1</i>.
+    The training algorithm used in "perceptron.py" is shown in (12), where ⊘ denotes Hadamard division (element-wise division) and <i>h << 1</i>.
     This training algoirthm has some additional operations not present in (11).
     The learning rate is divided by the second derivative of the <i>SSE</i> function.
     A larger second derivative implies that the curvature of the <i>SSE</i> function is steeper and narrower,
