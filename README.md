@@ -207,7 +207,7 @@ from perceptron import Network
 <p align="justify">
     The data contains measurements of time taken to incapacitate animals after being exposed to combustion yields of 
     CO, HCN, H<sub>2</sub>S, HCL, HBR, NO<sub>2</sub> and SO<sub>2</sub> gas. 
-    Time is measured in minutes and the concentration of gases are measured in parts per thousand.
+    Time is measured in minutes and the concentration of the gases is measured in parts per thousand.
     The perceptron will be used to build a linear model that will predict the approximate length of time it will take to incapacitate an animal
     when exposed to known concentrations of CO and NO<sub>2</sub>.
 </p>
@@ -312,7 +312,7 @@ df.head()
 
 <p align="justify">
     Plotting concentration data over time shows an approximately exponential trend (which in other context would imply a first order rate reaction).
-    Therefore, the natural log of the concentrations was taken to produce an approximately linear trend.
+    Therefore, the natural log of the concentrations was taken to produce an approximately linear trend. 
 </p>
 
 ```python
@@ -329,7 +329,7 @@ df = df[ [ 'time-to-incapacitation', 'CO', 'NO2' ] ].dropna( axis = 0 )
 ```
 
 <p align="justify">
-    Here is the input matrix <i><b>X</b></i> and vector of hypothetical outputs <i><b>Y</b></i>.
+    The input matrix <i><b>X</b></i> and vector of hypothetical outputs <i><b>Y</b></i> are created.
 </p>
 
 ```python
@@ -338,10 +338,17 @@ Y = df[ [ 'time-to-incapacitation' ] ].to_numpy()
 ```
 
 <p align="justify">
-    Now, the perceptron is trained on the data until a near minimum is reached.
+    The perceptron is trained on the data until a near minimum is reached.
     Optimal values for the learning rate <i>r</i> and convergence <i>h</i> can be found by trial and error.
     If an overflow error is encountered, <i>r</i> is likely too large.
     If the algorithm does not converge, either <i>h</i> or <i>r</i> may be too small.
+</p>
+<p align="justify">
+    This perceptron contains some basic optimization in its learning algorithm.
+    For most linear data models, 
+    training can be achieved in a timely manner after finding an optimal value for <i>r</i>
+    and a sufficient value for <i>h</i>.
+    However, if your mileage varies, refer to additional learning optimization algorithms
 </p>
 
 ```python
