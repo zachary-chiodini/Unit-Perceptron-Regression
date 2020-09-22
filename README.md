@@ -20,7 +20,9 @@
     Every element in the first column <i>x<sub>i,0</sub></i> = 1.
 </p>
 <hr>
-c
+<p align="center">
+    <img src="photos/equation1.png" width=75%>
+</p>
 <hr>
 <p align="justify">
     The other input is a column vector of weights <b>Ω</b> (2), which contain the weight or coefficient <i>ω<sub>i</sub></i> for each feature in <i><b>X</b></i>.
