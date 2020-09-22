@@ -71,7 +71,7 @@
 <p align="justify">
     The model is as close as possible to approximating the hypothetical outputs when the <i>SSE</i> reaches a minimum value.
     When the number of data points <i>m</i> = 2, a plot of the <i>SSE</i> over <i>p<sub>1</sub></i> and <i>p<sub>2</sub></i> is a paraboloid, shown below.
-    The minimum of the function can be easily seen. This is where the absolute value of the gradient of the 
+    The minimum of the function is easily seen. This is where the absolute value of the gradient of the 
     <i>SSE</i> with respect to each element in <i><b>P</b></i> is precisely zero.
     Though harder to visualize, the plot is analogous for large values of <i>m</i>.
 </p>
