@@ -211,7 +211,7 @@
 <p align="justify">
     To demonstrate, the "perceptron.py" module will be used on data from a 1978 paper entitled 
     "The Correlation of Animal Response Data with the Yields of Selected Thermal Decomposition Products for Typical Aircraft Interior Materials"
-    to fit a multiple linear regression model. The data is found in the file "air_int_incap.csv."
+    to fit a multiple linear regression model.
 </p>
 
 ```python
@@ -219,18 +219,19 @@ import pandas as pd, numpy as np
 from perceptron import Network
 ```
 
-```python
-df = pd.read_csv( 'air_int_incap.csv' )
-df.head()
-```
-
 <p align="justify">
+    The data is found in the file "air_int_incap.csv."
     The data contains measurements of time taken to incapacitate animals after being exposed to combustion yields of 
     CO, HCN, H<sub>2</sub>S, HCL, HBR, NO<sub>2</sub> and SO<sub>2</sub> gas. 
     Time is measured in minutes and the concentration of the gases is measured in parts per thousand.
     The perceptron will be used to build a linear model that will predict the approximate length of time it will take to incapacitate an animal
     when exposed to known concentrations of CO and NO<sub>2</sub>.
 </p>
+
+```python
+df = pd.read_csv( 'air_int_incap.csv' )
+df.head()
+```
 
 <div>
 <table border="1" class="dataframe">
