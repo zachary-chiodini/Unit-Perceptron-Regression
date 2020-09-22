@@ -1,7 +1,7 @@
 <h1>The Perceptron Unit for Multiple Linear Regression Analysis</h1>
 
 <p align="left">
-    <img src="photos/dependencies.png">
+    <img src="photos/dependencies.png" width="244px">
 </p>
 
 <p align="justify">
