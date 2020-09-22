@@ -403,7 +403,7 @@ network.showModel()
     It comes with no surprise that higher concentrations of CO and NO<sub>2</sub> lead to a faster death.
     This model predicts an approximate concentration of gases that will achieve instantaneous death, or at least incapacitation.
     The residuals show the variance in the measured output not captured by the model.
-    Although this lead to a relatively small R squared value, 
+    Although this led to a relatively small R squared value, 
     it is clear from the plot that this variance shows no clear trend 
     and a linear model was most likely the best choice to capture the relationship between time to incapacitate an animal
     and the natural logorithm of CO and NO<sub>2</sub> concentrations.
