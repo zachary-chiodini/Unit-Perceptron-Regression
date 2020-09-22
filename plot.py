@@ -55,7 +55,7 @@ ax.plot_wireframe(
 ax.contourf(
     X, Y, Z,
     cmap = 'rainbow_r',
-    offset = 0,
+    offset = -0.7,
     alpha = 0.5
     )
 
