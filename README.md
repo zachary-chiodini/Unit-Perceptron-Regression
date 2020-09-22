@@ -161,7 +161,7 @@
     If the data is not too large, it can train most linear data models in a timely manner 
     after finding an optimal value for <i>r</i> and a sufficient value for <i>h</i>.
     However, mileage may vary. 
-    Refer to additional learning optimization algorithms if a sufficient value for <i>h</i> cannot be promptly achieved.
+    Refer to additional learning optimization algorithms if a sufficient value for <i>h</i> cannot be achieved.
 </p>
 <hr>
 <p align="center">
