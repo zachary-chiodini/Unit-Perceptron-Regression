@@ -327,7 +327,7 @@ df.head()
 </div>
 
 <p align="justify">
-    Plotting concentration data over time shows an approximately exponential trend (which in other context would imply a first order rate reaction).
+    Plotting concentration data over time shows an approximately exponential trend (which might imply a first order rate reaction).
     Therefore, the natural log of the concentrations was taken to produce an approximately linear trend. 
 </p>
 
