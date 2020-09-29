@@ -102,6 +102,4 @@ ax.w_yaxis.set_pane_color( ( 0, 0, 0, 0 ) )
 ax.w_zaxis.set_pane_color( ( 0.95, 0.95, 0.95, 1 ) )
 ax.grid( b = None )
 ax.view_init( elev = 20, azim = -45 )
-plt.savefig( 'incapacitation.png',
-             transparent = True )
 plt.show()
