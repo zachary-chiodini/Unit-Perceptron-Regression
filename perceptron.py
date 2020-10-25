@@ -5,16 +5,16 @@ from functions import prettyPrint
 class Network( object ) :
 
     def __init__( self : object ) -> None :
-        self.__mse = 0.0 # mean sqaured error (mse)
+        self.__mse = 0.0 # mean sqaured error
         self.__rsquare = 0.0
         self.__netvars = np.array([]) # variances
-        self.__network = np.array([])
+        self.__network = np.array([]) # weights
         self.__results = np.array([])
 
     def perceptron(
         self : object,
         X : NDArray[ float ], # input matrix
-        W : NDArray[ float ], # network weights,
+        W : NDArray[ float ], # network weights
         b : float = 0         # bias, if not included in weights
         ) -> float :
         '''
